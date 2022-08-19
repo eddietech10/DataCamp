@@ -9,6 +9,13 @@ The sample statistic is available as late_prop_samp.
 late_shipments_boot_distn is a bootstrap distribution of the proportion of late shipments, available as a list.
 
 pandas and numpy are loaded with their usual aliases.
+
+Keywords:
+- standard error
+- z-score
+- Hypothesized value
+- Standardization
+- bootstrap distribution
 '''
 
 #################################################################
@@ -23,12 +30,28 @@ Calculate the standard error from the standard deviation of the bootstrap distri
 Calculate the z-score.
 '''
 
+# Hypothesize that the proportion is 6%
+late_prop_hyp = 0.06
 
+# Calculate the standard error
+std_error = np.std(late_shipments_boot_distn, ddof=1)
 
+# Find z-score of late_prop_samp
+z_score = (late_prop_samp - late_prop_hyp) / std_error
+
+# Print z_score
+print(z_score)
+
+'''
+<script.py> output:
+    0.13353771933071554
+'''
 #################################################################
 #################################################################
 #################################################################
 
 '''
+Zesty z-scoring! The z-score is a standardized measure of the difference between the sample statistic and the hypothesized statistic.
 
+https://campus.datacamp.com/courses/hypothesis-testing-in-python/yum-that-dish-tests-good-1?ex=4
 '''
