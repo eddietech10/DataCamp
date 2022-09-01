@@ -28,5 +28,7 @@ t: Proportions are ratios, so you need to estimate the numerator and the denomin
 #################################################################
 
 '''
+Zipadeedoodah for z-scores! The t-test is needed for tests of mean(s) since you are estimating two unknown quantities, which leads to more variability.
 
+https://campus.datacamp.com/courses/hypothesis-testing-in-python/letting-the-categoricals-out-of-the-bag-3?ex=2
 '''
