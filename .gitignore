@@ -1,3 +1,5 @@
 .DS_Store
 venv/
 .config.swp
+trasnsform_title.py
+trasnsform_title_to_sql.py
